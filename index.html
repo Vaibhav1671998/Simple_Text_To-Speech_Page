@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Speech</title>
+      <meta charset="utf-8">
+      <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+   </head>
+   <body>
+      <input onkeypress="enterpressalert(event, this)"  type="text" id="text">
+      <input id="demo" type='button' value='🔊 Play' />
+      <script>
+         function enterpressalert(e, input){
+         	console.log(2);
+         	var code = (e.keyCode ? e.keyCode : e.which);
+         	if(code == 13) { 
+         		text = document.getElementById("text").value;
+         		responsiveVoice.speak(text);
+         	}
+         }
+        </script>
+   </body>
+</html>
