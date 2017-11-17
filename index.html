@@ -3,6 +3,7 @@
    <head>
       <title>Speech</title>
       <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
       <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
       <style>
       	html , body {
@@ -13,12 +14,29 @@
       		background-color: #D0D0D0;
       	}
       	#container {
+      		width: 100%;
       		height: 100%;
+      	}
+      	#header {
+      		display: flex;
+      		justify-content: center;
+      		align-items: center;
+      		font-size: 40px;
+      		margin: 0;
+      		padding: 0;
+      		margin-top: 20px;
+      		font-family: 'Spectral SC', serif;
+      		color: #7C3ECB;
+      	}
+      	#content {
       		width: 100%;
       		display: flex;
       		flex-direction: column;
       		justify-content: center;
       		align-items: center;
+      		position:absolute;
+		    bottom:0px;
+		    top:50px
       	}
       	#text {
       		height: 25px;
@@ -43,9 +61,13 @@
       </style>
    </head>
    <body>
+   	
    	<div id="container">
-   		<input onkeypress="enterpressalert(event, this)"  type="text" id="text" placeholder="Enter text">
-      	<input id="demo" type='button' value='🔊 Play' />
+   		<h3 id="header">Simple Text To Speech App</h3>
+   		<div id="content">
+   			<input onkeypress="enterpressalert(event, this)"  type="text" id="text" placeholder="Enter text">
+      		<input id="demo" type='button' value='🔊 Play' />
+   		</div>	
    	</div>
       <script>
          function enterpressalert(e, input){
