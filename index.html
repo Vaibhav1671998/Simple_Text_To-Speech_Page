@@ -4,19 +4,61 @@
       <title>Speech</title>
       <meta charset="utf-8">
       <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+      <style>
+      	html , body {
+      		height: 100%;
+      		width: 100%;
+      		margin: 0;
+      		padding: 0;
+      		background-color: #D0D0D0;
+      	}
+      	#container {
+      		height: 100%;
+      		width: 100%;
+      		display: flex;
+      		flex-direction: column;
+      		justify-content: center;
+      		align-items: center;
+      	}
+      	#text {
+      		height: 25px;
+      		width: 90%;
+      		margin-bottom: 10px;
+      		border-radius: 10px;
+      		border-color: #C0C0C0;
+      		font-size: 15px;
+      	}
+      	#demo {
+      		height: 30px;
+      		width: 100px;
+      		border-color: #b2b2ff;
+      		border-width: 3px;
+      		color: black;
+      	}
+      	#demo:hover {
+      		cursor: pointer;
+      		border-color: black;
+      		color: red;
+      	}
+      </style>
    </head>
    <body>
-      <input onkeypress="enterpressalert(event, this)"  type="text" id="text">
-      <input id="demo" type='button' value='🔊 Play' />
+   	<div id="container">
+   		<input onkeypress="enterpressalert(event, this)"  type="text" id="text" placeholder="Enter text">
+      	<input id="demo" type='button' value='🔊 Play' />
+   	</div>
       <script>
          function enterpressalert(e, input){
-         	console.log(2);
          	var code = (e.keyCode ? e.keyCode : e.which);
          	if(code == 13) { 
          		text = document.getElementById("text").value;
          		responsiveVoice.speak(text);
          	}
          }
+         document.getElementById("demo").addEventListener('click',function () {
+         	text = document.getElementById("text").value;
+         	responsiveVoice.speak(text);
+         });
         </script>
    </body>
 </html>
