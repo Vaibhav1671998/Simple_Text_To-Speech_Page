@@ -30,12 +30,25 @@ html , body {
     bottom:0px;
     top:50px
 }
+#voice {
+    height: 45px;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-width: medium;
+    border-color: #6666ff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Spectral SC', serif;
+    cursor: pointer;
+}
 #text {
 	height: 25px;
 	width: 90%;
+    margin-top: 5px;
 	margin-bottom: 10px;
 	border-radius: 10px;
-	border-color: #C0C0C0;
+	border-color: #6666ff;
 	font-size: 15px;
 }
 #demo {
@@ -55,6 +68,9 @@ html , body {
     #header {
         font-size: 50px;
     }
+    #voice {
+        height: 45px;
+    }
     #text {
         height: 35px;
     }
@@ -65,6 +81,9 @@ html , body {
 @media only screen and (min-height: 500px) and (max-height: 699px) {
     #header {
         font-size: 60px;
+    }
+    #voice {
+        height: 50px;
     }
     #text {
         height: 35px;
@@ -77,6 +96,9 @@ html , body {
     #header {
         font-size: 70px;
     }
+    #voice {
+        height: 55px;
+    }
     #text {
         height: 45px;
     }
@@ -88,6 +110,9 @@ html , body {
 @media only screen and (min-height: 200px) and (max-height: 349px) {
     #header {
         font-size: 75px;
+    }
+    #voice {
+        height: 60px;
     }
     #text {
         height: 50px;

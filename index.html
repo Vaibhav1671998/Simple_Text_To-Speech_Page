@@ -4,6 +4,10 @@
       <title>Speech</title>
       <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
       <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
       <link defer rel="stylesheet" type="text/css" href="./css/styles.css">
    </head>
@@ -11,6 +15,8 @@
    	<div id="container">
    		<h3 id="header">Simple Text To Speech App</h3>
    		<div id="content">
+   			<select id="voice">
+   			</select>
    			<input onkeypress="enterpressalert(event, this)"  type="text" id="text" placeholder="Enter text">
       		<input id="demo" type='button' value='🔊 Play' />
    		</div>	
