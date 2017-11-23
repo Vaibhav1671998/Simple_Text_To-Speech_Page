@@ -5,63 +5,9 @@
       <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
       <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-      <style>
-      	html , body {
-      		height: 100%;
-      		width: 100%;
-      		margin: 0;
-      		padding: 0;
-      		background-color: #D0D0D0;
-      	}
-      	#container {
-      		width: 100%;
-      		height: 100%;
-      	}
-      	#header {
-      		display: flex;
-      		justify-content: center;
-      		align-items: center;
-      		font-size: 40px;
-      		margin: 0;
-      		padding: 0;
-      		margin-top: 20px;
-      		font-family: 'Spectral SC', serif;
-      		color: #7C3ECB;
-      	}
-      	#content {
-      		width: 100%;
-      		display: flex;
-      		flex-direction: column;
-      		justify-content: center;
-      		align-items: center;
-      		position:absolute;
-		    bottom:0px;
-		    top:50px
-      	}
-      	#text {
-      		height: 25px;
-      		width: 90%;
-      		margin-bottom: 10px;
-      		border-radius: 10px;
-      		border-color: #C0C0C0;
-      		font-size: 15px;
-      	}
-      	#demo {
-      		height: 30px;
-      		width: 100px;
-      		border-color: #b2b2ff;
-      		border-width: 3px;
-      		color: black;
-      	}
-      	#demo:hover {
-      		cursor: pointer;
-      		border-color: black;
-      		color: red;
-      	}
-      </style>
+      <link defer rel="stylesheet" type="text/css" href="./css/styles.css">
    </head>
    <body>
-   	
    	<div id="container">
    		<h3 id="header">Simple Text To Speech App</h3>
    		<div id="content">
@@ -69,18 +15,6 @@
       		<input id="demo" type='button' value='🔊 Play' />
    		</div>	
    	</div>
-      <script>
-         function enterpressalert(e, input){
-         	var code = (e.keyCode ? e.keyCode : e.which);
-         	if(code == 13) { 
-         		text = document.getElementById("text").value;
-         		responsiveVoice.speak(text);
-         	}
-         }
-         document.getElementById("demo").addEventListener('click',function () {
-         	text = document.getElementById("text").value;
-         	responsiveVoice.speak(text);
-         });
-        </script>
+	<script async src="./js/app.js"></script>
    </body>
 </html>
