@@ -58,6 +58,7 @@ html , body {
 	border-radius: 10px;
 	border-color: #6666ff;
 	font-size: 15px;
+    text-indent: 10px;
 }
 #textLabel {
     width: 100%;
@@ -81,60 +82,18 @@ html , body {
 	color: red;
 }
 
-/*@media only screen and (min-height: 700px) {
-    #header {
-        font-size: 50px;
-    }
-    #voice {
-        height: 45px;
-    }
-    #text {
-        height: 35px;
-    }
-    #demo {
-        height: 40px;
-    }
-}*/
 @media only screen and (max-height: 699px) {
     #header {
-        font-size: 60px;
-    }
-    #voice {
-        height: 50px;
-    }
-    #text {
-        height: 45px;
-    }
-    #demo {
-        height: 50px;
+        font-size: 45px;
     }
 }
 @media only screen and (max-height: 499px) {
     #header {
-        font-size: 70px;
-    }
-    #voice {
-        height: 55px;
-    }
-    #text {
-        height: 50px;
-    }
-    #demo {
-        height: 60px;
+        font-size: 50px;
     }
 }
-
 @media only screen and (max-height: 349px) {
     #header {
-        font-size: 75px;
-    }
-    #voice {
-        height: 60px;
-    }
-    #text {
-        height: 55px;
-    }
-    #demo {
-        height: 65px;
+        font-size: 55px;
     }
 }
